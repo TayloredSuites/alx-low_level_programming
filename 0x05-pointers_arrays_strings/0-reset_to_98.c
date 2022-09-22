@@ -1,22 +1,15 @@
 #!/bin/bash
-#include <stdio.h>
+# include "main.h"
 
 /**
-
- * main - Entry point
+ * main - check the code 
 
  *
 
- * Return: always 0
+ * Return: Always 0.
 
  */
-
-int main(void)
-
+void reset_to_98(int *n)
 {
-
-	puts("\"Programming is like building a multilingual puzzle");
-
-	return (0);
-
-}
+     int n;
+   
