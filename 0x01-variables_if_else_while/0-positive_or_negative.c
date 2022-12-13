@@ -7,7 +7,7 @@
  *
  * Return : Always 0 (Success)
  *
- * This Program assigns random number to variable 'n'
+ * Description: This Program assigns random number to variable 'n'
  *
  */
 
