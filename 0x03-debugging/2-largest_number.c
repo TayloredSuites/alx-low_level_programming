@@ -20,7 +20,7 @@ int largest_numbmer(int a, int b, int c)
 	{
 		largest = b;
 	}
-	else if (c > b && c > a)
+	else if (c > b)
 	{
 		largest = c;
 	}
