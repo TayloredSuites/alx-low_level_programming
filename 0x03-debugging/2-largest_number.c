@@ -22,7 +22,7 @@ int largest_numbmer(int a, int b, int c)
 	}
 	else
 	{
-		largest = c:
+		largest = c;
 	}
 	
 	return (largest);
