@@ -9,7 +9,7 @@
 
 void print_rev(char *s)
 {
-	int i;
+	int i = 0;
 
 	for (i <= 'z'; i >= 'a'; --i)
 	{
