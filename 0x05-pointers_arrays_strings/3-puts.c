@@ -14,8 +14,8 @@ void _puts(char *str)
 
 	while (str[i])
 	{
-	if ((str[i] >= 'a') && (str[i] != '\0'))
+	if ((str[i] != '\0'))
 		str[++i];
 	}
-	_putchar(str);
+	_putchar(str\n);
 }
