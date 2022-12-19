@@ -5,16 +5,15 @@
  *
  * @str: string pointer
  */
-
+i
 void _puts(char *str)
 {
 	int i;
 
 	while (i = 0; *str[i] != '\0'; str++)
 	{
-		_putchar(str[i]);
-		str++;
+		putchar(str[i]);
 	}
 
-	_putchar('\n')
+	putchar('\n')
 }
