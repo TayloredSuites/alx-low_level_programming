@@ -10,8 +10,7 @@
 
 int _strlen(char *s)
 {
-	char s;
+	int len;
 
-	strlen("%s", s);
-	return (strlen);
+	return (0);
 }
