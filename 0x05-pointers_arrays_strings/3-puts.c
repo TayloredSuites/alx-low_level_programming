@@ -5,7 +5,7 @@
  *
  * @str: string pointer
  */
-i
+
 void _puts(char *str)
 {
 	int i;
