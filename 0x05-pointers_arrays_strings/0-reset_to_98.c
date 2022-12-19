@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * main - check the code 
- * 
- * @m: integer to input
+ * main - check the code
  *
- * Return: Always 0.
+ * @n: any integer input
+ *
+ * Return: Always 0 
  */
-void reset_to_98(int *m)
-{
-     *m = 98;
-}
 
+void reset_to_98(int *n)
+{
+	*n = 98;
+}
