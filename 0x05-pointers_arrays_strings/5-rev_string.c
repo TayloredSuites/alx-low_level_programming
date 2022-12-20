@@ -7,20 +7,14 @@
  * Return: length of string as i
  */
 
-void lenstr(char *s)
-{
-	int i;
-	
-	while (s[i] != '\0')
-		++i;
-	return i;
-}		
-
 void rev_string(char *s)
 {
 	int i;
-	char len = lenstr(s);
+	char len = ;
 
+	while (s[i] != '\0')
+		++i;
+	return i;
 	for (i = len - 1; i >= 0; i--)
 		putchar(s[i]);
 }
