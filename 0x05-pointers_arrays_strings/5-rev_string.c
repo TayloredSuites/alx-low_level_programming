@@ -11,11 +11,11 @@ void rev_string(char *s)
 	int i;
 	int len;
 	
+	while (s[i] != '\0')
+	{
 	for (i = len - 1; i >= 0; i--)
 	{
-		while (s[i] != '\0')
-		{
 		putchar(s[i]);
-		}
+	}
 	}
 }
