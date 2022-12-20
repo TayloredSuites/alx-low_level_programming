@@ -25,4 +25,6 @@ void rev_string(char *s)
 		for (i = perch - 1; i >= 0; i--)
 		putchar(s[i]);
 	}
+	while (s[i] != '\0');
+	++i;
 }
