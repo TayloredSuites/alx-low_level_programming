@@ -9,12 +9,12 @@
 void rev_string(char *s)
 {
 	int i;
-	int max;
+	int bkwd = strlen(s--);
 
 	for (i = 0; i <= max; i++)
 	{
 		while (s[i] != '\0')
 		{
-		putchar(s[--max]);
+		putchar(bkwd);
 		}
 }
