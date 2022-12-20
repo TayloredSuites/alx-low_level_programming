@@ -7,7 +7,7 @@
  * Return: length of string as i
  */
 
-void _strlen(char *s)
+void lenstr(char *s)
 {
 	int i;
 	
@@ -19,7 +19,7 @@ void _strlen(char *s)
 void rev_string(char *s)
 {
 	int i;
-	char len = _strlen(s);
+	char len = lenstr(s);
 
 	for (i = len - 1; i >= 0; i--)
 		putchar(s[i]);
