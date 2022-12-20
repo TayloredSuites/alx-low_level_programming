@@ -4,6 +4,8 @@
  * rev_string - a function that prints a string, in reverse,
  * followed by a new line
  * @s: Pointer to a string
+ * _strlen - a function that prints length of a string
+ * Return: length of string pointed to
  */
 
 int _strlen(char *s)
