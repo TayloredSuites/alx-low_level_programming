@@ -20,7 +20,7 @@ void puts2(char *str)
     int i;
     int perch = _strlen(str);
     
-    for (i >= 0; i <= perch; i++)
+    for (i = 0; i <= perch; i++)
     {
         while (str != '\0')
         {
