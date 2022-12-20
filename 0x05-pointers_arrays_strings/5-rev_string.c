@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
-* rev_string -  a function that reverses a string
-* @s: String pointer
-*/
+ * rev_string - a function that prints a string, in reverse,
+ * followed by a new line
+ * @s: Pointer to a string
+ */
 
 void rev_string(char *s)
 {
-    int i;
-    
-    while (s != '\0')
-    {
-      i++;
-      }
-      for (i -= 'z', i >= 'a'; --i)
-      {
-        putchar(s[i]);
-        }
+	int i;
+	int max;
+
+	for (i = 0; i <= max; i++)
+	{
+		while (s[i] != '\0')
+		{
+		putchar(s[--max]);
+		}
 }
