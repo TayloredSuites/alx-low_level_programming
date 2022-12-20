@@ -11,7 +11,7 @@ void print_rev(char *s)
 	int i;
 	int max;
 
-	for (i >= 0; i -= max; --i)
+	for (i >= 0; i < max; --i)
 	{
 		while (s[i] != '\0')
 		{
