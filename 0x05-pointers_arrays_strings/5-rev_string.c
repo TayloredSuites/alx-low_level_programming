@@ -4,15 +4,20 @@
  * rev_string - a function that prints a string, in reverse,
  * followed by a new line
  * @s: Pointer to a string
+ * Return: length of string as len
  */
 
 void rev_string(char *s)
 {
 	int i;
-	int len = strlen(s);
+	int len;
 	
 	while (s[i] != '\0')
+	{
 		i++;
+	}
+	return (len);
+	
 	for (i = len - 1; i >= 0; i--)
 		putchar(s[i]);
 }
