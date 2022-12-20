@@ -10,6 +10,7 @@ void rev_string(char *s)
 {
 	int i;
 	int bkwd = _strlen(s) - 1;
+	int max;
 
 	for (i = 0; i <= max; i++)
 	{
