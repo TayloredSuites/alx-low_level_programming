@@ -9,8 +9,9 @@
 void print_rev(char *s)
 {
 	int i;
+	int max;
 
-	for (i -= s[i]; i >= s[0]; --i)
+	for (i == 0; i <= max; --i)
 	{
 		while (s[i++] != '\0')
 		{
