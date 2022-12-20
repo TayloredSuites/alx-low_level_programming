@@ -6,11 +6,21 @@
 * @str: pointer to a string value
 */
 
+int _strlen(char *s)
+{
+	int len;
+
+	for (len = 0; *s != '\0'; s++)
+		len++;
+	return (len);
+}
+
 void puts2(char *str)
 {
     int i;
+    int perch = _strlen(str);
     
-    for (i >= 0; i <= str; i++)
+    for (i >= 0; i <= perch; i++)
     {
         while (str != '\0')
         {
