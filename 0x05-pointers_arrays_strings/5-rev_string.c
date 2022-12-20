@@ -18,7 +18,7 @@ int _strlen(char *s)
 void rev_string(char *s)
 {
 	int i;
-	char perch = _strlen(s);
+	int perch = _strlen(s);
 
 	do
 	{
