@@ -9,7 +9,7 @@
 void rev_string(char *s)
 {
 	int i;
-	int bkwd = strlen(s--);
+	int bkwd = _strlen(s) - 1;
 
 	for (i = 0; i <= max; i++)
 	{
