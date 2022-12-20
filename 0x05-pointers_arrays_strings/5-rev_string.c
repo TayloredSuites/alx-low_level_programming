@@ -9,14 +9,16 @@
 void rev_string(char *s)
 {
 	int i;
-	int bkwd = _strlen(s) - 1;
-	int max;
-
-	for (i = 0; i <= max; i++)
+	int len;
+	
+	if (len = 0; *s != '\0'; s++)
+		len++;
+	
+	for (i = 0; i <= len; i++)
 	{
 		while (s[i] != '\0')
 		{
-		putchar(bkwd);
+		putchar(s[i]);
 		}
 	}
 }
