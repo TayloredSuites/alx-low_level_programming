@@ -21,7 +21,7 @@ char *_strncpy(char *dest, char *src, int n)
     i++;
   }
   
-  while((*dest[i++] = *src[j++]) != '\0')
+  while(*dest[i++] = *src[j++])
   {
     i++;
     j++;
