@@ -1,9 +1,9 @@
 # include "main.h"
 
 /**
- * main - Check the code
+ * *_strcat - a function that concatenates two strings
  *
- * Return : Always 0.
+ * Return: dest
  *
  */
 
