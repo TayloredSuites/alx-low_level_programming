@@ -15,4 +15,5 @@ void reverse_array(int *a, int n)
 		a[g] = a[h];
 		a[h] = g;
 	}
+	putchar("%i", g);
 }
