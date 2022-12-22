@@ -9,7 +9,11 @@
 char *string_toupper(char *)
 {
 	if (s >= 'a' && s <= 'z')
-		return (s + 'A' - 'a');
+	{
+		s + 'A' - 'a';
+	}
 	else
+	{
 		rerurn (s);
+	}
 }
