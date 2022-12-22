@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase
- * @s: string 
+ * @s: string in question
  * Return: upper case
  */
 
@@ -14,6 +14,6 @@ char *string_toupper(char *s)
 	}
 	else
 	{
-		rerurn (s);
+		return (s);
 	}
 }
