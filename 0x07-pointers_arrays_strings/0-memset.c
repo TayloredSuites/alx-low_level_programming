@@ -2,9 +2,9 @@
 
 /**
  * _memset - a function that fills memory with a constant byte
- * @s - a char pointer to a values address
- * @b - a character value whose address can be pointed to
- * @n - an unsigned integer indicating no of bytes to be filled
+ * @s: a char pointer to a values address
+ * @b: a character value whose address can be pointed to
+ * @n: an unsigned integer indicating no of bytes to be filled
  * Return: memory that is filled
  */
 
