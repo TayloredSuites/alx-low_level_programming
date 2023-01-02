@@ -1,0 +1,1 @@
+This is another look at string arrays and addresses of pointer-to-pointer
