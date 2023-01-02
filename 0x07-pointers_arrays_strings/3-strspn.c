@@ -16,9 +16,8 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		while (s[i] == NULL && accept[i] = NULL)
 		{
-			return(len);
+			return (len);
 		}
-	
 		len++;
 	}
 	return (len);
