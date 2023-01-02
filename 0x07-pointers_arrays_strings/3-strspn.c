@@ -9,17 +9,15 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int len = 0;
-	char i, j;
+	unsigned int len;
 
-	for (i = j; s[i] == accept[j]; i++)
+	len = 0;
+	if ((s == NULL) || (accept == NULL))
+		return len;
+
+	while (*s && strchr(accept, *s++))
 	{
-		while (s[i] == NULL && accept[i] = NULL)
-		{
-			return (len);
-		}
 		len++;
 	}
-	return (len);
-
+	return len;
 }
