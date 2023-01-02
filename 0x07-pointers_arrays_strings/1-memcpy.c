@@ -19,10 +19,12 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		*dest[i] = *src[i];
 	}
-	while (j > n)
-	{
-		*dest[i++] = '\0';
-	}
+	/**
+	 * while (j > n)
+	 * {
+	 * *dest[i++] = '\0';
+	 * }
+	 */
 	/**
 	 * if ((ptrdest != NULL) && (ptrsrc != NULL))
 	 * {
