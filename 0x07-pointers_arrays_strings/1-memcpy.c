@@ -10,7 +10,9 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int i, j;
+	char *ptrdest = dest;
+	char *ptrsrc = src;
+	int  i, j;
 
 	i = j = 0;
 	for (j = 0; j < n && *src[i] != '\0'; i++)
@@ -20,6 +22,15 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	while (j > n)
 	{
 		*dest[i++] = '\0';
+	}
+	
+	if ((ptrdest != NULL) && (ptrsrc != NULL))
+	{
+		while (n)
+		{
+			*(ptrdest++) = *(ptrsrc++);
+			--n;
+		}
 	}
 	return (dest);
 }
