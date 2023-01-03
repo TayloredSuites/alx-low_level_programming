@@ -11,16 +11,26 @@ void print_rev(char *s)
 	int i;
 	int max;
 
+	while (s[i] == '\0')
+	{
+		char temp;
+		char i = '\0';
+		char b = ' ';
+
+		temp = b;
+		i = b;
+		b = temp;
+
+		putchar(s[max--]);
+		putchar('\n');
+	}
 	for (i = 0; i <= max; i++)
 	{
-		if (s[i] != '\0')
+		while (s[i] != '\0')
 		{
 			putchar(s[max--]);
 		}
-		else
-		{
-			putchar('');
-		}
 		putchar('\n');
 	}
+	
 }
