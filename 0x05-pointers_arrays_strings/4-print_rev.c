@@ -11,12 +11,10 @@ void print_rev(char *s)
 	int i;
 	int max;
 
-	for (i = 0; i <= max; i++)
+	i = 0;
+	for (i <= max; s[i] != '\0'; i++)
 	{
-		while (s[i] != '\0')
-		{
 		putchar(s[max--]);
-		}
 	}
 	putchar('\n');
 }
