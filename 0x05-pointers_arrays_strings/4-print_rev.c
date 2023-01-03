@@ -17,6 +17,7 @@ void print_rev(char *s)
 		{
 			putchar(s[max--]);
 		}
+		else (i++)
 	}
 	putchar('\n');
 }
