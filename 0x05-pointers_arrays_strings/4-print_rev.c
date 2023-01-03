@@ -11,8 +11,7 @@ void print_rev(char *s)
 	int i;
 	int max;
 
-	i = 0;
-	for (i <= max; s[i] != '\0'; i++)
+	for (i = 0; i <= max; i++)
 	{
 		putchar(s[max--]);
 	}
