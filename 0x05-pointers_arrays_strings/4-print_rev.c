@@ -33,4 +33,17 @@ void print_rev(char *s)
 		putchar('\n');
 	}
 	
+	while (s[i] == '\0')
+	{
+		char temp;
+		char i = '\0';
+		char b = ' ';
+		
+		temp = b;
+		i = b;
+		b = temp;
+		
+		putchar(s[max--]);
+		putchar('\n');
+	}
 }
