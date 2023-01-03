@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * print_chessboard - a function that prints the chessboard
+ * print_chessboard - function that prints chessboard
+ * @haystack: string under consideration
+ * @needle: substring in the spring under curtain
+ * Return: pointer to substring
  */
-
 void print_chessboard(char (*a)[8])
 {
 	int i, j;
