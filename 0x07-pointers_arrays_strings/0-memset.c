@@ -18,7 +18,6 @@ char *_memset(char *s, char b, unsigned int n)
 	}
 	return (s);
 }
-#include <unistd.h>
 
 /**
  * _putchar - writes the character c to stdout
@@ -29,5 +28,5 @@ char *_memset(char *s, char b, unsigned int n)
 
 int _putchar(char s)
 {
-	return (write(1, &c, 1));
+	return (write(1, &s, 1));
 }
