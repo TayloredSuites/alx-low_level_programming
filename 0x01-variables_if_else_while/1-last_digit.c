@@ -7,6 +7,7 @@
  *
  * Return : Always 0 (Success)
  *
+ * Description: assign a rand number to the variable n
  */
 
 int main(void)
@@ -17,15 +18,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 5)
 	{
-		printf("Last digit of %d and is greater than 5\n", n);
+		printf("Last digit of %d is greater than 5\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("Last digit of %d and is 0\n", n);
+		printf("Last digit of %d is 0\n", n);
 	}
 	else
 	{
-		printf("Last digit of %d and is less than 6 and not 0\n", n);
+		printf("Last digit of %d is less than 6 and not 0\n", n);
 	}
 	return (0);
 }
