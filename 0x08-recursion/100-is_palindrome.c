@@ -8,7 +8,7 @@
 
 int is_palindrome(char *s)
 {
-	if (s[i++] == s[i--])
+	if (*s[i++] == *s[i--])
 	{
 		return (1);
 	}
@@ -16,5 +16,5 @@ int is_palindrome(char *s)
 	{
 		return (0);
 	}
-	return (s = is_palindrome(s));
+	return (s + is_palindrome(s));
 }
