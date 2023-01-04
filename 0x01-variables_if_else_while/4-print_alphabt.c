@@ -3,7 +3,7 @@
 /**
  * main - Entry Point
  * Return: Always 0 (Success)
- * Description: 
+ * Description: print all letters except q and e
  */
 
 int main(void)
@@ -12,10 +12,14 @@ int main(void)
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		while (i != 'e' || i != 'q')
+		if (i != 'e' || i != 'q')
+		{
+			i++;
+			continue;
+		}
+		else
 		{
 			putchar(i);
-			continue;
 		}
 	}
 	putchar('\n');
