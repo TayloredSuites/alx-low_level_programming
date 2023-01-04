@@ -2,8 +2,7 @@
 
 /**
  * print_chessboard - function that prints chessboard
- * @haystack: string under consideration
- * @needle: substring in the spring under curtain
+ * @a: the row address pointer of first array element
  * Return: pointer to substring
  */
 void print_chessboard(char (*a)[8])
@@ -26,9 +25,3 @@ void print_chessboard(char (*a)[8])
 		}
 	}
 }
-
-
-
-
-
-
