@@ -3,7 +3,7 @@
 # include <stdio.h>
 
 /**
- * main - Entry Point
+ * main - Assigns a random number to a variable n
  *
  * Return : Always 0 (Success)
  *
