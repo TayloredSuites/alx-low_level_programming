@@ -18,21 +18,3 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
-	/**
-	 * while (j > n)
-	 * {
-	 * *dest[i++] = '\0';
-	 * }
-	 */
-	/**
-	 * if ((ptrdest != NULL) && (ptrsrc != NULL))
-	 * {
-	 * while (n)
-	 * {
-	 * *(ptrdest++) = *(ptrsrc++);
-	 * --n;
-	 *  }
-	 *  }
-	 */
-
-
