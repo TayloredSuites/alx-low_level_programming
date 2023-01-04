@@ -33,6 +33,6 @@ char *_strpbrk(char *s, char *accept)
 	}
 	if (tally == 1)
 	{
-		return &s[bes];
+		return (&s[bes]);
 	}
 }
