@@ -9,11 +9,15 @@
 int main(void)
 {
 	int i;
+	char j;
 
 	for (i = 0; i <= 16; i++)
 	{
-
-		putchar(i);
+		for (j = 'a'; j <= 'f'; j++)
+		{
+			putchar(j);
+			putchar(i);
+		}
 	}
 	putchar('\n');
 	return (0);
