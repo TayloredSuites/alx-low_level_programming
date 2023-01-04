@@ -5,7 +5,9 @@
 /**
  * main - Entry point
  *
- * Return : Always 0 (Success)
+ * Return: Always 0 (Success)
+ *
+ * Description: assign a rand number to the variable n
  */
 
 int main(void)
