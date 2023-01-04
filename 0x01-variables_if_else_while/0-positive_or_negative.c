@@ -3,12 +3,9 @@
 # include <stdio.h>
 
 /**
- * main - Assigns a random number to a variable n
+ * main - Entry point
  *
  * Return : Always 0 (Success)
- *
- * Description: This Program assigns random number to variable 'n'
- *
  */
 
 int main(void)
