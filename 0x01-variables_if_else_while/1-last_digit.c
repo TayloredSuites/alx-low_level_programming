@@ -3,9 +3,9 @@
 # include <stdio.h>
 
 /**
- * Main - Entry Point
+ * main - Entry Point
  *
- * Return : Always 0 (Success)
+ * Return: Always 0 (Success)
  *
  * Description: assign a rand number to the variable n
  */
@@ -28,7 +28,8 @@ int main(void)
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last_digit);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, 
+				last_digit);
 	}
 	return (0);
 }
