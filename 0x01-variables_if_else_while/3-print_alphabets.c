@@ -18,5 +18,5 @@ int main(void)
 	{
 		putchar(i\n);
 	}
-
 	return (0);
+}
