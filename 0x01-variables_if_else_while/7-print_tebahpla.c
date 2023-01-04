@@ -1,10 +1,9 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry Point
- *
  * Return: Always 0 (Success)
- *
+ * Description: prints alphabetin reverse
  */
 
 int main(void)
@@ -17,6 +16,5 @@ int main(void)
 	}
 
 	putchar('\n');
-
 	return (0);
 }
