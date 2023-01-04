@@ -14,6 +14,7 @@ int main(void)
 	{
 		while (i != 'e' || i != 'q')
 		{
+			for (i = 'q'; i = 'e'; i++)
 			putchar(i);
 		}
 	}
