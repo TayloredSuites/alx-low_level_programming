@@ -1,10 +1,9 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry Point
- *
  * Return: Always 0 (success)
- *
+ * Description: Print in lowercase then upper then newline
  */
 
 int main(void)
