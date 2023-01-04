@@ -14,7 +14,7 @@ char *_strstr(char *haystack, char *needle)
 	j = needle;
 	if (*j == 0)
 	{
-		return *haystack;
+		return (*haystack);
 	}
 
 	for (; *haystack != 0; haystack++)
@@ -26,10 +26,10 @@ char *_strstr(char *haystack, char *needle)
 
 		i = haystack;
 		while (1)
-		{ 
+		{
 			if (*j == 0)
 			{
-				return *haystack;
+				return (*haystack);
 			}
 			if (*i++ != *b++)
 			{
