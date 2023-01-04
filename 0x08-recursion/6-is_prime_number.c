@@ -8,7 +8,7 @@
 
 int is_prime_number(int n)
 {
-	while (((n % 2) != 0) && (n / n = 1) && (n / 1 = n))
+	while (((n % 2) != 0) && ((n / n) = 1) && ((n / 1) = n))
 	{
 		return (1);
 	}
