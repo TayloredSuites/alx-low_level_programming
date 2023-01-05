@@ -23,6 +23,8 @@ int _check_sqrt(int i, int n)
 
 int _sqrt_recursion(int n)
 {
+	int i = 0;
+
 	if (n == 1)
 	{
 		return (1);
