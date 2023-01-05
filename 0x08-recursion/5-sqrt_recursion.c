@@ -15,6 +15,7 @@ int _check_sqrt(int i, int n)
 	}
 	_check_sqrt(i, n + 1);
 }
+
 /**
  * _sqrt_recursion -  the natural square root of a number
  * @n: number under condideraton
