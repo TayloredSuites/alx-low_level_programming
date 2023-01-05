@@ -13,6 +13,10 @@ int _check_sqrt(int i, int n)
 	{
 		return (i);
 	}
+	else if ((n / 2) == i)
+	{
+		return (-1);
+	}
 	return (_check_sqrt(i, n + 1));
 }
 
