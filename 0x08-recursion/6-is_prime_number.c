@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * check - if the input integer is a prime number
+ * check_prime - if the input integer is a prime number
  * @i: denumerator
  * @j: numerator
  * Return: 1 if prime number or 0 if not
  */
 
-int check(int i, int j)
+int check_prime(int i, int j)
 {
-	if ((j % 2) == 0 || ((j / i) != 1))
+	if ((j % 2) == 0)
 	{
 		return (0);
 	}
-	else if ((i / j) != i)
+	else if ((j / i) == j || (j /j) == 1)
 	{
-		return (0);
+		return (1);
 	}
 	else
 	{
@@ -33,6 +33,6 @@ int is_prime_number(int n)
 {
 	if (n > 1)
 	{
-		return (check(2, n));
+		return (check_prime(2, n));
 	}
 }
