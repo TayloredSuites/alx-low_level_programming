@@ -29,6 +29,8 @@ int check_prime(int i, int j)
 
 int is_prime_number(int n)
 {
+	int i = 0;
+
 	if (n > 1)
 		return (check_prime(2, n));
 }
