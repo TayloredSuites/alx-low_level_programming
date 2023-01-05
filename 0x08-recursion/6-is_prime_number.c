@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * is_prime_int - if the input integer is a prime number
+ * check - if the input integer is a prime number
  * @i: denumerator
  * @j: numerator
  * Return: 1 if prime number or 0 if not
  */
 
-int is_prime_int(int i, int j)
+int check(int i, int j)
 {
 	if ((j % 2) == 0 || ((j / i) != 1))
 	{
@@ -19,7 +19,7 @@ int is_prime_int(int i, int j)
 	}
 	else
 	{
-		return (is_orime_int(i + 1, j));
+		return (check(i + 1, j));
 	}
 }
 
@@ -33,6 +33,6 @@ int is_prime_number(int n)
 {
 	if (n > 1)
 	{
-		return (is_prime_int(2, n));
+		return (check(2, n));
 	}
 }
