@@ -7,7 +7,7 @@
  * Return: recursive checker
  */
 
-int _check_sqrt(int i, int n)
+int _check_sqrt(int n, int i)
 {
 	if (i * i == n)
 	{
@@ -17,7 +17,7 @@ int _check_sqrt(int i, int n)
 	{
 		return (-1);
 	}
-	return (_check_sqrt(i, n + 1));
+	return (_check_sqrt((n + 1), i));
 }
 
 /**
@@ -38,8 +38,5 @@ int _sqrt_recursion(int n)
 	{
 		return (1);
 	}
-	else
-	{
-		return (_check_sqrt(i, n));
-	}
+	return (_check_sqrt(n, i));
 }
