@@ -13,7 +13,7 @@ int _check_sqrt(int i, int n)
 	{
 		return (i);
 	}
-	_check_sqrt(i, n + 1);
+	return (_check_sqrt(i, n + 1));
 }
 
 /**
