@@ -27,12 +27,12 @@ int _sqrt_recursion(int n)
 	{
 		return (1);
 	}
-	else if (n < 1)
-	{
-		return (_check_sqrt(i, n));
-	}
-	else (n < 0)
+	else if (n < 0)
 	{
 		return (-1);
+	}
+	else
+	{
+		return (_check_sqrt(i, n));
 	}
 }
