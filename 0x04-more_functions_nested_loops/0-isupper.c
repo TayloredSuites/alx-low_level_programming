@@ -19,6 +19,9 @@ int _isupper(int c)
 	}
 	else
 	{
-		return (0);
+		for (i = 'a'; i <= 'z'; i++)
+		{
+			return (0);
+		}
 	}
 }
