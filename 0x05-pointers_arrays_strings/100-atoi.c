@@ -6,7 +6,7 @@
  * Return: the integer
  */
 
-int _atoi(shar *s)
+int _atoi(char *s)
 {
 	int c = 0;
 	unsigned int n = 0;
