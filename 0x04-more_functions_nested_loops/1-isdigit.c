@@ -1,4 +1,4 @@
-#include "amin.h"
+#include "main.h"
 
 /**
  * _isdigit - prints digit
