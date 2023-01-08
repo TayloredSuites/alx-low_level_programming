@@ -8,8 +8,14 @@
  * Return: exit(0)
  */
 
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
-	print("%d\n", argc - 1);
+	int i;
+
+	for (i = 1; i <= argc; i++)
+	{
+		printf("Iterating at %d\n", i)
+	}
+	print("%d\n", argc)
 	return (0);
 }
