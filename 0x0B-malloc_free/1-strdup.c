@@ -12,7 +12,6 @@ char *_strdup(char *str)
 	char *strcopy;
 	unsigned int i;
 	unsigned int n;
-
 	
 	for (i = 0; str[i]; i++)
 	{
