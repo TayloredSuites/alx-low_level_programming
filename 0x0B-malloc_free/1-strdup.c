@@ -5,8 +5,8 @@
  * memory, which containsi a copy of the string given as a param
  * @str: str under consideration that is copied
  * Return: pointer  to alloc space , Null if str == Null
+ * Description: a function that returns a pointer to new alloc
  */
-
 char *_strdup(char *str)
 {
 	char *strcopy;
