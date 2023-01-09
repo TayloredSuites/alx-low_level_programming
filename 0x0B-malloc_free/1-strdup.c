@@ -9,22 +9,22 @@
 
 char *_strdup(char *str)
 {
-	char *strptr;
+	char *strcopy;
 	unsigned int i;
 	unsigned int n;
 
 	
 	for (i = 0; str[i]; i++)
 	{
-		strptr = malloc(sizeof(char) * i);
-		for (n = 0; n = i; n++)
+		strcopy = malloc(sizeof(char) * i);
+		for (n = 0; n < i; n++)
 		{
-			strptr[n] = str[n];
+			strcopy[n] = str[n];
 		}
 	}
-	if (str == NULL || strptr == NULL)
+	if (str == NULL || strcopy == NULL)
 	{
 		return (NULL);
 	}
-	return (strptr);
+	return (strcopy);
 }
