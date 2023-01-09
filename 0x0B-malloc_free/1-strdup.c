@@ -13,7 +13,6 @@ char *_strdup(char *str)
 	unsigned int i;
 	unsigned int n;
 
-	strptr = malloc(sizeof(char) * i);
 	if (str == NULL || strptr == NULL)
 	{
 		return (NULL);
@@ -25,5 +24,6 @@ char *_strdup(char *str)
 			strptr[n] = str[n];
 		}
 	}
+	strptr = malloc(sizeof(char) * i);
 	return (strptr);
 }
