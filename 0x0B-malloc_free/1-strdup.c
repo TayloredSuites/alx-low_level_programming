@@ -13,10 +13,6 @@ char *_strdup(char *str)
 	unsigned int i;
 	unsigned int n;
 
-	if (str == NULL || stcopy == NULL)
-	{
-		return (NULL);
-	}
 	for (i = 0; str[i]; i++)
 	{
 		stcopy = malloc(sizeof(char) * i);
@@ -24,6 +20,10 @@ char *_strdup(char *str)
 		{
 			stcopy[n] = str[n];
 		}
+	}
+	if (str == NULL || stcopy == NULL)
+	{
+		return (NULL);
 	}
 	return (stcopy);
 }
