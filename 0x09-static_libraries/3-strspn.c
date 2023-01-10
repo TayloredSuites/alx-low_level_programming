@@ -10,14 +10,24 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int len;
+	int n;
 
 	len = 0;
-	if ((s == NULL) || (accept == NULL))
-		return (len);
-
-	while (*s && strchr(accept, *s++))
+	while (*s)
 	{
-		len++;
+		for (n = 0; accept[n]; n++)
+		{
+			if (*s == accept[n])
+			{
+				len++;
+				break;
+			}
+			else if (accept[n + 1] == '\0')
+			{
+				return (len);
+			}
+		}
+		s++;
 	}
 	return (len);
 }
