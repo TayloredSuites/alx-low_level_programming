@@ -9,21 +9,21 @@
  */
 char *_strdup(char *str)
 {
-	char *strcopy;
+	char *stcopy;
 	unsigned int i;
 	unsigned int n;
-	
-	if (str == NULL || strcopy == NULL)
+
+	if (str == NULL || stcopy == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; str[i]; i++)
 	{
-		strncopy = malloc(sizeof(char) * i);
+		stcopy = malloc(sizeof(char) * i);
 		for (n = 0; n < i; n++)
 		{
-			strcopy[n] = str[n];
+			stcopy[n] = str[n];
 		}
 	}
-	return (strcopy);
+	return (stcopy);
 }
