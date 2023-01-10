@@ -13,15 +13,15 @@ int main(int argc, char *argv[])
 {
 	int a, b, res;
 
-	if (argc == 3)
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	res = a * b;
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-	res = a * b;
-	while (argv[2][0])
+	else
 	{
 		printf("%d\n", res);
 	}
