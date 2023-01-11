@@ -16,6 +16,6 @@ void print_to_98(int n)
 	}
 	else
 	{
-		return (0);
+		printf("This is out of range of stuff");
 	}
 }
