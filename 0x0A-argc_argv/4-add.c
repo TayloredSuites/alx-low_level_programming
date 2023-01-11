@@ -7,14 +7,13 @@
  * @argc: name of prog and/or array of cmd lines passed
  * @argv: contains args used in prog
  * Return: 1 for error, and 0 if successful
- * Description: not digits, print Error, followed by 
+ * Description: not digits, print Error, followed by
  * a new line, and return 1
  */
 
 int main(int argc, char *argv[])
 {
 	int i, n, sum = 0;
-	
 	if (argc > 0)
 	{
 		for (i = 1; i < argc; i++)
@@ -28,7 +27,8 @@ int main(int argc, char *argv[])
 				}
 			}
 			sum += atoi(argv[i]);
-		}printf("%d\n", sum);
+		}
+		printf("%d\n", sum);
 		return (0);
 	}
 	printf("0\n");
