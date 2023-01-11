@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - prints no of args passed 
+ * main - prints no of args passed
  * @argc: no of cmds and/or name of prog
  * @argv: an array of argc
  * Return: exit(0)
