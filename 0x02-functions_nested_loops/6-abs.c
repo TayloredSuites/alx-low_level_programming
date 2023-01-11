@@ -3,7 +3,7 @@
 /**
  * _abs - get value of int
  * @n: integer under consideration
- * Return: Always 0 (Success)
+ * Return: n for positive -n for negative
  */
 
 int _abs(int)
