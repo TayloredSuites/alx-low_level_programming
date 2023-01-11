@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Return: Always0 (Success void
+ * print_aplhabet - Entry point
  * Description: prints the alphabet, in lowercase, followed by a new line
  */
 
@@ -15,5 +14,4 @@ void print_alphabet(void)
 		_putchar(i);
 	}
 	_putchar('\n');
-	return (0);
 }
