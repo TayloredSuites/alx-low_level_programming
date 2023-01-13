@@ -12,7 +12,7 @@ void *malloc_checked(unsigned int b)
 {
 	void *allmem;
 
-	allmem = malloc(sizeof(b));
+	allmem = malloc(b);
 	if (allmem == NULL)
 	{
 		exit(98);
