@@ -11,8 +11,8 @@
 
 int *array_range(int min, int max)
 {
-	void *ptrarray;
-	unsigned int i;
+	int *ptrarray;
+	int i;
 
 	if (min > max)
 	{
