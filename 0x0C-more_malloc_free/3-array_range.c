@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stddef.h>
 
 /**
  * array_range - creates an array of ordered values
@@ -19,14 +18,14 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	ptrarray = malloc(sizeof(int) * (min..max));
+	ptrarray = malloc(sizeof(int) * ((max - min) - 1));
 	if (ptrarray  == 0)
 	{
 		return (NULL);
 	}
-	for (i = min; i < max; i++)
+	for (i = min; i < ((max - min) - 1); i++)
 	{
-		ptrarray[i];
+		ptrarray[i] = min;
 	}
 	return (ptrarray);
 }
