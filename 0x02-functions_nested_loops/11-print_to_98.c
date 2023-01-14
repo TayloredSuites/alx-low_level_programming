@@ -13,5 +13,5 @@ void print_to_98(int n)
 	{
 		printf("%i, ", n);
 	}
-	return (n);
+	_putchar('\n');
 }
