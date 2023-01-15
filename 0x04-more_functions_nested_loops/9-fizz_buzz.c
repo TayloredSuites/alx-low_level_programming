@@ -13,7 +13,7 @@ int main(void)
 	n = 100;
 	for (i = 0; i <= n; i++)
 	{
-		if (n < 0)
+		while (n > 0)
 		{
 			if ((n % 3) == 0)
 			{
@@ -32,10 +32,6 @@ int main(void)
 				_putchar(n);
 			}
 			_putchar(' ');
-			_putchar('\n');
-		}
-		else
-		{
 			_putchar('\n');
 		}
 	}
