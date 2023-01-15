@@ -6,10 +6,11 @@
  * @n: the number needed for the lisst
  */
 
-void main(int n)
+void main(void)
 {
-	int i;
+	int i, n;
 
+	n = 100;
 	for (i = 0; i < n; i++)
 	{
 		if (n < 0)
