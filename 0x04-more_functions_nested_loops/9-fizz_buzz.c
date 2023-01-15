@@ -4,6 +4,7 @@
 /**
  * main - A discrimminatory function
  * @n: the number needed for the lisst
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -35,4 +36,5 @@ int main(void)
 			_putchar('\n');
 		}
 	}
+	return (0);
 }
