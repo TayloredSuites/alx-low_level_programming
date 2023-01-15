@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - A discrimminatory function
+ * main - A discrimminatory function
  * @n: the number needed for the lisst
  */
 
-void fizz_buzz(int n)
+void main(int n)
 {
 	int i;
 
