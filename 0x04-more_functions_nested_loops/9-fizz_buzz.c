@@ -30,10 +30,10 @@ int main(void)
 			}
 			else
 			{
-				_putchar(n);
+				printf("%i",n);
 			}
-			_putchar(' ');
-			_putchar('\n');
+			printf(" ");
+		printf("\n");
 		}
 	}
 	return (0);
