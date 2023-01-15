@@ -18,9 +18,8 @@ void print_rev(char *s)
 	}
 	for (i = 0; i <= max; i++)
 	{
-		s[i] = s[max];
-		max--;
-		putchar(s[max]);
+		s[i] = s[max--];
+		putchar(s[i]);
 	}
 	putchar('\n');
 }
