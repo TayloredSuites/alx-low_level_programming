@@ -20,7 +20,7 @@ void print_rev(char *s)
 	{
 		s[i] = s[max];
 		max--;
-		_putchar(s[max]);
+		putchar(s[max]);
 	}
 	putchar('\n');
 }
