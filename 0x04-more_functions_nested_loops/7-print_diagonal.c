@@ -5,7 +5,7 @@
  * @n:  the number of times user wants it printed
  */
 
-oid print_diagonal(int n)
+void print_diagonal(int n)
 {
 	int i, j;
 
