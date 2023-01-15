@@ -3,11 +3,12 @@
 
 /**
  * fizz_buzz - A discrimminatory function
+ * @n: the number needed for the lisst
  */
 
-void fizz_buzz(void)
+void fizz_buzz(int n)
 {
-	int n, i;
+	int i;
 
 	for (i = 0; i < n; i++)
 	{
@@ -34,7 +35,7 @@ void fizz_buzz(void)
 		}
 		else
 		{
-			_putcharr('\n');
+			_putchar('\n');
 		}
 	}
 }
