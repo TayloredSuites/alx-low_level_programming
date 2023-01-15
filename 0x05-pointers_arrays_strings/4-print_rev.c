@@ -26,24 +26,9 @@ void print_rev(char *s)
 	}
 	for (i = 0; i <= max; i++)
 	{
-		while (s[i] != '\0')
-		{
-			putchar(s[max--]);
-		}
-		putchar('\n');
+		s[i] = s[max];
+		max--;
+		_putchar(s[max]);
 	}
-	
-	while (s[i] == '\0')
-	{
-		char temp;
-		char i = '\0';
-		char b = ' ';
-		
-		temp = b;
-		i = b;
-		b = temp;
-		
-		putchar(s[max--]);
-		putchar('\n');
-	}
+	putchar('\n');
 }
