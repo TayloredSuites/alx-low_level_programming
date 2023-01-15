@@ -9,29 +9,32 @@ void fizz_buzz(void)
 {
 	int n, i;
 
-	if (n < 0)
+	for (i = 0; i < n; i++)
 	{
-		if ((n % 3) == 0)
+		if (n < 0)
 		{
-			printf("fizz");
-		}
-		else if ((n % 5) == 0)
-		{
-			printf("buzz");
-		}
-		else if ((n % 3) == 0 && (n % 5) == 0)
-		{
-			printf("FizzBuzz");
+			if ((n % 3) == 0)
+			{
+				printf("fizz");
+			}
+			else if ((n % 5) == 0)
+			{
+				printf("buzz");
+			}
+			else if ((n % 3) == 0 && (n % 5) == 0)
+			{
+				printf("FizzBuzz");
+			}
+			else
+			{
+				_putchar(n);
+			}
+			_putchar(' ');
+			_putchar('\n');
 		}
 		else
 		{
-			_putchar(n);
+			_putcharr('\n');
 		}
-		_putchar(' ');
-		_putchar('\n');
-	}
-	else
-	{
-		_putcharr('\n');
 	}
 }
