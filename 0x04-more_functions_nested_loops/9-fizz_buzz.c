@@ -6,7 +6,7 @@
  * @n: the number needed for the lisst
  */
 
-void main(void)
+int main(void)
 {
 	int i, n;
 
