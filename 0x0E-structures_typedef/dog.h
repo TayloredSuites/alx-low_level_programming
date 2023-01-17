@@ -9,7 +9,6 @@ typedef struct dog dog;
  * @owner: dog owner identification
  * Description: Dog type structure
  */
-
 struct dog
 {
 	char *name;
