@@ -2,6 +2,7 @@
 #define DOG_H
 
 /**
+ * dog - A structure for dog class
  * @name: name of the dog
  * @age: age of the dog
  * @owner: dog owner identification
