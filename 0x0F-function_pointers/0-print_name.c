@@ -8,7 +8,7 @@
 void print_name(char *name, void (*f)(char *))
 {
 	/* Checks if entries are null. Avoiding null pointer error */
-	(if f == NULL || name == NULL)
+	if (f == NULL || name == NULL)
 	{
 		return;
 	}
