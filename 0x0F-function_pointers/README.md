@@ -1,0 +1,2 @@
+Function pointers aren't that headachy. Here's a project that deals with them. 
+Point m me to a function that deals with my issues![D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D
