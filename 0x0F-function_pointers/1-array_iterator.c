@@ -10,7 +10,7 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	unsigned int i;
 	/* Increment to be used on size, then pass this through the funtion */
 
 	if (array == NULL)
