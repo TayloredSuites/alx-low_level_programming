@@ -1,0 +1,1 @@
+Introduction to the workings of variadic functions. These take a known number of supposedly unknown arguments of type and pointer to them.
