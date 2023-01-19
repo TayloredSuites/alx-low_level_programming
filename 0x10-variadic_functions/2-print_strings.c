@@ -1,4 +1,4 @@
-#incude "variadic_functions.h"
+#include "variadic_functions.h"
 
 /**
  * print_strings -  a function that prints strings, followed by newline
@@ -15,11 +15,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(string, n);
 	if (separator == NULL)
 	{
-		return (NULL);
+		return;
 	}
 	for (i = 0; i < n; i++)
 	{
-		printf("%s", va_arg(string, char));
+		printf("%s", va_arg(string, char*));
 		if (i < (n - 1))
 		{
 			printf("%s", separator);

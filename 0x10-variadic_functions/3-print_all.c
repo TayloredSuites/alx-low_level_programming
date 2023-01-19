@@ -15,18 +15,18 @@ void print_all(const char * const format, ...)
 	va_list anything;
 
 	n = 9;
-	va_start(anything, n);
+	va_start(anything, format);
 	if (format == NULL)
 	{
 		printf("(nil)");
 	}
-	for (i = 0, i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 
-		switch (format)
+		switch (format[i])
 		{
 			case 'c':
-				printf("%c", va_arg(anything, char));
+				printf("%c", va_arg(anything, int));
 				break;
 			case 'i':
 				printf("%i", va_arg(anything, int));
@@ -38,7 +38,7 @@ void print_all(const char * const format, ...)
 				printf("%s", va_arg(anything, char*));
 				break;
 			default:
-				printf("Not included");
+				break;
 		}
 	}
 	va_end(anything);

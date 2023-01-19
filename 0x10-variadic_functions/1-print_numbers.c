@@ -15,12 +15,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(params, n);
 	if (separator == NULL)
 	{
-		printf("");
+		return;
 	}
 	for (i = 0; i < n; i++)
 	{
 		/* va_arg(params, int); */
-		printf("%d", var_arg(params, int));
+		printf("%d", va_arg(params, int));
 		/* print separator for all except last count */
 		if (i < (n - 1))
 		{
