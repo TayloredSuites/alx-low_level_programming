@@ -22,7 +22,6 @@ void print_all(const char * const format, ...)
 	}
 	for (i = 0; i < n; i++)
 	{
-
 		switch (format[i])
 		{
 			case 'c':
@@ -40,6 +39,7 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
+		printf(", ");
 	}
 	va_end(anything);
 	printf("\n");
