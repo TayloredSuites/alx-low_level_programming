@@ -9,21 +9,19 @@
 size_t print_list(const list_t *h)
 {
 	size_t num_nodes;
-	list_t *temp;
 
 	/* h = (struct node*)malloc(sizeof(struct node)); */
 
-	temp = h;
 	num_nodes = 0;
-	if (temp->str == NULL)
+	if (h->str == NULL)
 	{
 		printf("[0] (nil)\n");
 	}
-	while (temp != 0)
+	while (h != 0)
 	{
 		num_nodes++;
-		printf("[%d] (%s)\n", temp->len, temp->str);
-		temp = temp->next;
+		printf("[%d] (%s)\n", h->len, h->str);
+		h = h->next;
 	}
 	return (num_nodes);
 }
