@@ -1,6 +1,23 @@
 #include "lists.h"
 
 /**
+ * _strlen - a function that returns the length of a string
+ * @s: pointer to string under consideration
+ *
+ * Return: Always 0 (Success
+ */
+int _strlen( const char *s)
+{
+	int len;
+
+	for (len = 0; *s != '\0'; s++;)
+	{
+		len++;
+	}
+	return (len);
+}
+
+/**
  * add_node_end - function that adds a new node at end of list_t list
  * @head: pointer to the pointer of the head node of the list
  * @str: the strin gunder consideration for duplication
