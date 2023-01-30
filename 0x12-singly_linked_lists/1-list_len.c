@@ -13,11 +13,7 @@ size_t list_len(const list_t *h)
 
 	temp = h;
 	elements = 0;
-	if (temp == NULL)
-	{
-		printf("Non-existent list");
-	}
-	else
+	while (temp != NULL)
 	{
 		elements++;
 		temp = temp->next;
