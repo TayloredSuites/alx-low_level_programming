@@ -13,11 +13,12 @@ size_t print_list(const list_t *h)
 	/* h = (struct node*)malloc(sizeof(struct node)); */
 
 	num_nodes = 0;
-	/* if (h->str == NULL) */
-	/* { */
-	/*	printf("[0] (nil)\n"); */
-	/* } */
-	 /* Shifted to inside the while loop and see if it is better logic */
+	/* if (h->str == NULL)
+	 * {
+	 * printf("[0] (nil)\n");
+	 * }
+	 * Shifted to inside the while loop and see if it is better logic
+	 */
 	while (h != NULL)
 	{
 		if (h->str == NULL)
