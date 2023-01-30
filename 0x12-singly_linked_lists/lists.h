@@ -22,23 +22,6 @@ typedef struct list_s
 
 } list_t;
 
-/**
- * _strlen - a function that returns the length of a string
- * @s: pointer to string under consideration
- *
- * Return: Always 0 (Success)
- */
-int _strlen(const char *s)
-{
-	int len;
-
-	for (len = 0; *s != '\0'; s++)
-	{
-		len++;
-	}
-	return (len);
-}
-
 /* Top level declarations, global functions and definitions aside */
 
 int _putchar(char c);
