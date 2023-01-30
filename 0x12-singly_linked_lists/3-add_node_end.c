@@ -40,7 +40,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	/* Traverse to the penultimate node */
 	if (temp->next == NULL)
 	{
-		free(inserte_node);
+		free(inserted_node);
 	}
 	temp = temp->next;
 	/* When untrue, make the next temp->next into inserted_node */
