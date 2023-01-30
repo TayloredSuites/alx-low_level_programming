@@ -15,7 +15,7 @@ list_t *add_node(list_t **head, const char *str)
 	/* Temp holds the transversing value of the head */
 	temp = head;
 	/* newnode = (struct list_t*)malloc(sizeof(struct list_t)); */
-	new_node->next = head;
-	head = new_node;
+	new_node->next = *head;
+	*head = new_node;
 	return (new_node);
 }
