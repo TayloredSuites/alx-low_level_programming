@@ -45,7 +45,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	temp = temp->next;
 	/* When untrue, make the next temp->next into inserted_node */
 	temp->next = inserted_node;
-	if (inserted_node->str == NULL)
+	if (inserted_node->str == NULL || strdup(str) == NULL)
 	{
 		free(inserted_node);
 	}
