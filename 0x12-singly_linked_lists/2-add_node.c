@@ -6,7 +6,7 @@
  *
  * Return: Always 0 (Success)
  */
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int len;
 
@@ -27,20 +27,14 @@ int _strlen(char *s)
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
-	const char duplicate;
 	int length;
 	
 
 	new_node = (list_t*)malloc(sizeof(list_t));
-	duplicate = strdup(str);
 	length = _strlen(str);
-	if (str != NULL)
-	{
-		duplicate;
-	}
 	while (new_node != NULL)
 	{
-		new_node->str = duplicatte;
+		new_node->str = strdup(str);
 		new_node->len = length;
 		new_node->next = *head;
 		*head = new_node;
