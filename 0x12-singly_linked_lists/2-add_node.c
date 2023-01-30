@@ -10,12 +10,13 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
-	list_t *temp;
+	
 
-	/* Temp holds the transversing value of the head */
-	*temp = *head;
-	/* newnode = (struct list_t*)malloc(sizeof(struct list_t)); */
-	new_node->next = *head;
-	*head = new_node;
+	newnode = (struct list_t*)malloc(sizeof(struct list_t));
+	if (new_node-> != NULL)
+	{
+		new_node->next = *head;
+		*head = new_node;
+	}
 	return (new_node);
 }
