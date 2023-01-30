@@ -38,17 +38,19 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 	/* Traverse to the penultimate node */
-	while (temp->next != NULL)
+	if (temp->next == NULL)
 	{
-		temp = temp->next;
+		free(inserte_node);
 	}
+	temp = temp->next;
 	/* When untrue, make the next temp->next into inserted_node */
 	temp->next = inserted_node;
-	while (inserted_node->str != NULL)
+	if (inserted_node->str == NULL)
 	{
-		inserted_node->str = strdup(str);
-		inserted_node->len = length;
+		free(inserted_node);
 	}
+	inserted_node->str = strdup(str);
+	inserted_node->len = length;
 	/* Creating end node termination */
 	inserted_node->next = NULL;
 	return (inserted_node);
