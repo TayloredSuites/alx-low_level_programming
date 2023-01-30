@@ -15,9 +15,11 @@ size_t list_len(const list_t *h)
 	{
 		printf("Non-existent list");
 	}
-	while (h->next != NULL)
+	else
 	{
-		elements++;
+		/* Once it is not n ull, add it to the count */
+		count++;
+		/* Then move to the next node unnder the head */
 		h = h->next;
 	}
 	return (elements);
