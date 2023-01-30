@@ -15,7 +15,7 @@ size_t list_len(const list_t *h)
 	{
 		printf("Non-existent list");
 	}
-	else
+	while (h->next != NULL)
 	{
 		elements++;
 		h = h->next;
