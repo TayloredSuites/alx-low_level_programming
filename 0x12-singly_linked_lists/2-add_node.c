@@ -1,6 +1,23 @@
 #include "lists.h"
 
 /**
+ * _strlen(char *s) - aa function that returns the length of a string
+ * @s: string under consideration
+ *
+ * Return: Always 0 (Success)
+ */
+int _strlen(char *s)
+{
+	int len;
+
+	for (len = 0; *s != '\0'; s++)
+	{
+		len++;
+	}
+	return (len);
+}
+
+/**
  * add_node - a function that adds a new node at the beginning of a list_t list
  * @head: pointer to the head pointer of the list
  * @str: string that needs to be duplicated
@@ -10,11 +27,21 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
+	const char duplicate;
+	int length;
 	
 
 	new_node = (list_t*)malloc(sizeof(list_t));
-	if (new_node != NULL)
+	duplicate = strdup(str);
+	length = _strlen(str);
+	if (str != NULL)
 	{
+		duplicate;
+	}
+	while (new_node != NULL)
+	{
+		new_node->str = duplicatte;
+		new_node->len = length;
 		new_node->next = *head;
 		*head = new_node;
 	}
