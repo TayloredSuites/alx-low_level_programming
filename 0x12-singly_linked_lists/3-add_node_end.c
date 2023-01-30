@@ -6,7 +6,7 @@
  *
  * Return: Always 0 (Success
  */
-int _strlen( const char *s)
+int _strlen(const char *s)
 {
 	int len;
 
