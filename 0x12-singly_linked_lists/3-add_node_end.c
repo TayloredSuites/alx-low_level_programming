@@ -33,6 +33,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	inserted_node = (list_t *)malloc(sizeof(list_t));
 	temp = *head;
 	length = _strlen(str);
+	if (inserted_node == NULL)
+	{
+		return (NULL);
+	}
 	/* Traverse to the penultimate node */
 	while (temp->next != NULL)
 	{
