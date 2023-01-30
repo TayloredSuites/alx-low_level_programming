@@ -14,7 +14,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *temp; /* temporary head for traversing */
 
 	inserted_node = (list_t *)malloc(sizeof(list_t));
-	temp = head;
+	temp = *head;
 	length = _strlen(str);
 	/* Traverse to the penultimate node */
 	while (temp->next != NULL)
@@ -25,6 +25,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	temp->next = inserted_node;
 	inserted_node->str = strdup(str);
 	inserted_node->len = length;
+	/* Creating end node termination */
 	inserted_node->next = NULL;
 	return (inserted_node);
 	free(inserted_node);
