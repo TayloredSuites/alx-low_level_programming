@@ -44,8 +44,11 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	/* When untrue, make the next temp->next into inserted_node */
 	temp->next = inserted_node;
-	inserted_node->str = strdup(str);
-	inserted_node->len = length;
+	while (inserted_node->str != NULL)
+	{
+		inserted_node->str = strdup(str);
+		inserted_node->len = length;
+	}
 	/* Creating end node termination */
 	inserted_node->next = NULL;
 	return (inserted_node);
