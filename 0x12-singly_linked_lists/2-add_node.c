@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * _strlen(char *s) - aa function that returns the length of a string
+ * _strlen - aa function that returns the length of a string
  * @s: string under consideration
  *
  * Return: Always 0 (Success)
@@ -28,10 +28,13 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
 	int length;
-	
 
-	new_node = (list_t*)malloc(sizeof(list_t));
+	new_node = (list_t *)malloc(sizeof(list_t));
 	length = _strlen(str);
+	if (new_node == NULL)
+	{
+		return (NULL);
+	}
 	new_node->str = strdup(str);
 	new_node->len = length;
 	new_node->next = *head;
