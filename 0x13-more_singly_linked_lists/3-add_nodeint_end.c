@@ -29,8 +29,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		/* Traverse to the penultimate node */
 		temp = temp->next;
+		temp->next = inserted_node;
 	}
-	temp->next = inserted_node;
 	inserted_node->n = n;
 	inserted_node->next = NULL;
 	return (inserted_node);
