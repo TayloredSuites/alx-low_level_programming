@@ -8,12 +8,14 @@ void free_list(list_t *head)
 {
 	list_t *temp;
 
-	/* temp created to leave head pointing to the first element of list */
-	while (head)
+	/* temp created to have a first node pointer for a first node */
+	while  (head != NULL)
 	{
-		temp = head->next;
-		free(head->str);
-		free(head);
-		head = temp;
+		/* Create base case for copycat temp */
+		temp = head;
+		/* Shift head away to next node */
+		head = head->next;
+		free(temp->str);
+		free(temp);
 	}
 }
