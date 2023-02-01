@@ -17,7 +17,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	inserted_node = (listint_t *)malloc(sizeof(listint_t));
 	if (inserted_node == NULL)
 	{
-		return (NULL):
+		return (NULL);
 	}
 	/* When untrue make the nemp->next into inserted_node */
 	while (temp->next != NULL)
