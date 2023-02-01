@@ -19,14 +19,19 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		return (NULL);
 	}
+	if (temp = NULL)
+	{
+		*head = inserted_node;
+	}
+	inserted_node->next = NULL;
 	/* When untrue make the nemp->next into inserted_node */
 	while (temp->next != NULL)
 	{
 		/* Traverse to the penultimate node */
 		temp = temp->next;
 	}
-	temp->n = n;
 	temp->next = inserted_node;
+	inserted_node->n = n;
 	inserted_node->next = NULL;
 	return (inserted_node);
 }
