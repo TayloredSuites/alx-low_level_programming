@@ -9,13 +9,11 @@ void free_list(list_t *head)
 	list_t *temp;
 
 	/* temp created to leave head pointing to the first element of list */
-	temp = head;
-	/** Let head and temp be equal for base case */
-	while (head != NULL)
+	while (head)
 	{
 		temp = head->next;
 		free(head->str);
-		free(temp);
+		free(head);
 		head = temp;
 	}
 }
