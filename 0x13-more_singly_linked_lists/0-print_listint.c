@@ -13,18 +13,12 @@ size_t print_listint(const listint_t *h)
 	/* h = (struct listint_t)malloc(sizeof(struct listint_t)); */
 
 	num_nodes = 0;
-	while (h != null)
+	while (h != NULL)
 	{
-		if (h->n == NULL)
-		{
-			printf("[0] (nil)\n");
-		}
-		else
-		{
-			num_nodes++;
-			printf("%n\n", h->n);
-			h = h->next;
-		}
+	/* h->n == NULL fails due to pointer not int */
+		num_nodes++;
+		printf("%d\n", h->n);
+		h = h->next;
 	/* Increase the num_nodes, print int data,  then go to next node */
 	}
 	return (num_nodes);
