@@ -46,6 +46,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		return (NULL);
 		free(inserted_node);
+		free(*head);
 	}
 	/* If it isn't NULL fill it up with scanf or gets values */
 	inserted_node->str = duplicate;
@@ -54,8 +55,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	/* Case for function variable of head pointer */
 	if (*head == NULL)
 	{
-		return (NULL);
-		free(*head);
+		*head = inserted_node;
+
 	}
 	/* Condition for traversal */
 	temp = *head;
