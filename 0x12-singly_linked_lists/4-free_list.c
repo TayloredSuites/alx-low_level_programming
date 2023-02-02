@@ -8,8 +8,8 @@ void free_list(list_t *head)
 {
 	list_t *temp;
 
-	/* temp created to have a first node pointer for a first node */
-	while  (head)
+	/* temp created to have a pointer to head node for traversal */
+	while  (head != NULL && head->str != NULL)
 	{
 		/* Create base case for copycat temp */
 		temp = head;
