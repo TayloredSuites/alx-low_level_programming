@@ -3,6 +3,24 @@
 #include <stdlib.h>
 #include <stddef.h>
 
+
+/**
+ * strlen - Caluclate length of a strng
+ * @s: string under consideration
+ *
+ * Return: length of string
+ */
+int _strlen(*s)
+{
+	int len;
+
+	for (len = 0; *s != '\0'; s++)
+	{
+		len++;
+	}
+	return (len);
+}
+
 int _putchar(char c);
 
 unsigned int binary_to_uint(const char *b);
