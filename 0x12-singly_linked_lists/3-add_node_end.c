@@ -33,19 +33,20 @@ list_t *add_node_end(list_t **head, const char *str)
 	inserted_node = (list_t *)malloc(sizeof(list_t));
 	temp = *head;
 	length = _strlen(str);
+	duplicate = strdup(str);
 	/* Cases for function variables */
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 	/* Case for the node to be inserted */
-	if (inserted_node == NULL)
+	if (inserted_node == NULL || duplicate == NULL)
 	{
 		return (NULL);
 		free(inserted_node);
 	}
 	/* If it isn't NULL fill it up with scanf or gets values */
-	inserted_node->str = strdup(str);
+	inserted_node->str = duplicate;
 	inserted_node->len = length;
 	inserted_node->next = NULL;
 	/* Case for function variable of head pointer */
