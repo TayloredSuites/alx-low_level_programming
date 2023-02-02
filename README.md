@@ -1,3 +1,3 @@
-This project is C based and aims to keep in line with the Betty linter. Files will be compiled on Ubuntu 20.04 LTS using gcc, with the options -Wall -Werror -Wextra -pedantic -std=gnu89. 
+C is supposedly one of the shorter programming languages. It is contained in a handbook famously known as K & R. Howeverr, in order to utilize it properly, there is a megillah of things to know about C -- hence this project. This project is C based and aims to keep in line with the Betty linter. Files will be compiled on Ubuntu 20.04 LTS using gcc, with the options -Wall -Werror -Wextra -pedantic -std=gnu89. 
 
-As eponymously stated, this project is an intoduction to low-level programming in C. It will grow to include arrays, pointers and strings in C. Each addition will be consecutively added as the projects go on.
+As eponymously stated, this project is an intoduction to low-level programming in C. It will grow to include pointers, data structures and bit manipulation. Each addition will be consecutively added as the projects go on.
