@@ -9,7 +9,7 @@ void free_list(list_t *head)
 	list_t *temp;
 
 	/* temp created to have a first node pointer for a first node */
-	while  (head != NULL)
+	while  (head)
 	{
 		/* Create base case for copycat temp */
 		temp = head;
