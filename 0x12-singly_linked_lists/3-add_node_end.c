@@ -27,7 +27,7 @@ int _strlen(const char *s)
 list_t *add_node_end(list_t **head, const char *str)
 {
 	int length;
-	char duplicate;
+	char *duplicate;
 	list_t *inserted_node;
 	list_t *temp; /* temporary head for traversing */
 
@@ -42,7 +42,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		free(inserted_node);
 	}
 	/* Case for the node to be inserted */
-	if (inserted_node == NULL || duplicate == NULL)
+	if (inserted_node == NULL)
 	{
 		return (NULL);
 		free(inserted_node);
