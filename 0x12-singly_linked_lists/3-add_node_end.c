@@ -33,25 +33,34 @@ list_t *add_node_end(list_t **head, const char *str)
 	inserted_node = (list_t *)malloc(sizeof(list_t));
 	temp = *head;
 	length = _strlen(str);
+	/* Cases for function variables */
+	if (str == NULL)
+	{
+		return (NULL);
+		free(str);
+	}
+	/* Case for the node to be inserted */
 	if (inserted_node == NULL)
 	{
 		return (NULL);
-	}
-	/* Traverse to the penultimate node */
-	if (temp->next == NULL)
-	{
-	/* When true it is end of list, make next node inserted one */
-		temp->next = inserted_node;
-	}
-	temp = temp->next;
-	if (inserted_node->str == NULL || strdup(str) == NULL)
-	{
 		free(inserted_node);
 	}
+	/* If it isn't NULL fill it up with scanf or gets values */
 	inserted_node->str = strdup(str);
 	inserted_node->len = length;
-	/* Creating end node termination */
 	inserted_node->next = NULL;
+	/* Case for function variable of head pointer */
+	if (*head == NULL)
+	{
+		return (NULL);
+		free(*head);
+	}
+	/* Condition for traversal */
+	while (temp->next != 0)
+	{
+		temp = temp->next;
+	}
+	temp->next = inserted_node;
 	return (inserted_node);
 	free(inserted_node);
 }
