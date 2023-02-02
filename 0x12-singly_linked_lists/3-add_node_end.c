@@ -37,7 +37,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (str == NULL)
 	{
 		return (NULL);
-		free(str);
 	}
 	/* Case for the node to be inserted */
 	if (inserted_node == NULL)
