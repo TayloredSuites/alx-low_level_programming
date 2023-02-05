@@ -10,10 +10,10 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int i, temp;
-	unsigned long int helper;
+	unsigned long int helper = n ^ m;
 	int flips;
 
-	for (i = 63; i >= 0; i--)
+	for (i = 0; i < 63; i++)
 	{
 		temp = helper >> i;
 		if (temp & 1)
