@@ -6,19 +6,9 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int bin_rep;
-	int i; /* Increment number */
-
-	for (i = sizeof(unsigned long int); i >= 0; i++)
+	if (n > 1)
 	{
-		n = n >> i;
-		if (n & 1)
-		{
-			_putchar("1");
-		}
-		else
-		{
-			_putchar("0");
-		}
+		print_binary(n >> 1);
 	}
+	_putchar((n & 1) + '0');
 }

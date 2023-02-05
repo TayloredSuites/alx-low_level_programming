@@ -8,8 +8,9 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int i = 0; /* Increments the loop */
+	int i = 0, remainder, base, exp; /* Increments the loop */
 	unsigned int converted_num;
+	long double result = 1.0; /* 2 to the power of 0 */
 
 	if (b == NULL)
 	{
@@ -19,11 +20,16 @@ unsigned int binary_to_uint(const char *b)
 	{
 		return (0);
 	}
-	for (i = 0; i < _strlen(b); i++)
+	while (exp != 0)
+	{
+		result *= base;
+		--exp;
+	}
+	for (i = 0; i < _strlen(*b); i++)
 	{
 		remainder = b[i] % 10;
 		b[i] = b[i] / 10;
-		converted_num = converted_num + remander * (power(2, i));
+		converted_num = converted_num + remainder * result;
 	}
 	return (converted_num);
 }
