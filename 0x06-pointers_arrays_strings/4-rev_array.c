@@ -2,9 +2,9 @@
 
 /**
  * reverse_array - a function that reverses the content of an array of integers
- * @n: amount to pad with if strng s empty 
+ * @a: pointer to array under consideration
+ * @n: bytes to pad array with if empty
  */
-
 void reverse_array(int *a, int n)
 {
 	int i, temp_str;
