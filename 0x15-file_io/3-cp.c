@@ -26,7 +26,7 @@ int _strlen(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int opener_to, p_arg = 3; /* First actual PID, lke a command */
+	int opener_to, writer_to, p_arg = 3; /* First actual PID, lke a command */
 	char *filename[];
 	char *text[];
 	
