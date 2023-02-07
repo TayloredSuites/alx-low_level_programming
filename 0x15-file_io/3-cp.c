@@ -37,8 +37,8 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	/* Create the file_to for appending */
-	text_buff = malloc(sizeof(text) * _strlen(text));
-	fn_buff = malloc(sizeof(filename) * _strlen(filename));
+	text_buff = (int *)malloc(sizeof(text) * _strlen(text));
+	fn_buff = ,(int *)malloc(sizeof(filename) * _strlen(filename));
 	opener_to = open(fn_buff, O_WRONLY | O_APPEND | O_TRUNC);
 	writer_to = write(opener_to, text_buff, _strlen(text));
 	if (opener_to == -1 || writer_to == -1)
