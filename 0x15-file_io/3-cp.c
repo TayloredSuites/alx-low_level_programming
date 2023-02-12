@@ -26,9 +26,10 @@ int _strlen(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int opener_to, p_arg = 3; /* First actual PID, lke a command */
+	int opener_to, writer_to, p_arg = 3; /* Actual PIDargcv */
 	char *filename[];
 	char *text[];
+	
 	
 	if (argc != p_arg)
 	{
@@ -36,10 +37,10 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	/* Create the file_to for appending */
-	text_buff = malloc(sizeof(text) * _strlen(text));
-	fn_buff = malloc(sizeof(filename) * _strlen(filename));
-	opener_to = open(filename, O_WRONLY | O_APPEND | O_TRUNC);
-	writer_to = write(opener_to, text, _strlen(text));
+	text_buff = (int *)malloc(sizeof(text) * _strlen(text));
+	fn_buff = ,(int *)malloc(sizeof(filename) * _strlen(filename));
+	opener_to = open(fn_buff, O_WRONLY | O_APPEND | O_TRUNC);
+	writer_to = write(opener_to, text_buff, _strlen(text));
 	if (opener_to == -1 || writer_to == -1)
 	{
 		return (-1);
