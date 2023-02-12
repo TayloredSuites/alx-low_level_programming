@@ -41,9 +41,9 @@ int create_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 	{
 		return (-1);
-		close(opener); /* If null, close the whole thing */
+		/* close(opener); If null, close the whole thing */
 	}
-	/* If either user modes returned an error, send error msg */
+	/* If either file use overall returned an error, send error msg */
 	if (opener == -1 || writer == -1)
 	{
 		return (-1);
