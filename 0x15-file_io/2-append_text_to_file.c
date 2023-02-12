@@ -15,13 +15,15 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
+	/* flags to onlyuse existing file, append text_content */
+	opener = open(filename, O_WRONLY | O_APPEND);
+	/* Removing trunc as it isnt a new file */
+	writer = write(opener, text_content, _strlen(text_content));
+	/* IF text_content is NULL return 1 as exists */
 	if (text_content == NULL)
 	{
-		return (-1);
+		return (1);
 	}
-	/* flags to onlyuse existing file, append text_content */
-	opener = open(filename, O_WRONLY | O_APPEND | 0_TRUNC);
-	writer = write(opener, text_content, _strlen(text_content));
 	/* Only writes, only append, no creation, truncate if opener is 1 */
 	if (opener == -1 || writer == -1)
 	{
