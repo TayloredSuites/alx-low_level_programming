@@ -24,7 +24,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	opener = open(filename, O_RDONLY);
 	reader = read(opener, buf, letters);
-	writer = write(STDOUT_FILENO, buf, letters);
+	writer = write(STDOUT_FILENO, buf, reader);
+	/* Sending reader is the ourput to be read aka stderr */
 	if (opener == -1 || reader == -1 || writer == -1 || reader != writer)
 	{
 		free(buf);
