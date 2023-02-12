@@ -32,15 +32,18 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	if (text_content == NULL)
-	{
-		return (-1);
-	}
 	creator_mode = (S_IWUSR | S_IRUSR);
 	/* www.gnu.org/software/libc/manual/html_node/Permission-Bits.html */
 	opener = open(filename, O_WRONLY | O_CREAT | O_TRUNC, creator_mode);
+	/* If opener is -1 then return -1 */
 	writer = write(opener, text_content, _strlen(text_content));
-	/* If either returned an error, send error msg */
+	/* Create case for null text content where writer wont work */
+	if (text_content == NULL)
+	{
+		return (-1);
+		close(opener); /* If null, close the whole thing */
+	}
+	/* If either user modes returned an error, send error msg */
 	if (opener == -1 || writer == -1)
 	{
 		return (-1);
