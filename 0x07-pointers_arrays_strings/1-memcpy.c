@@ -5,7 +5,8 @@
  * @dest: the final string
  * @src: the source string under consideration
  * @n: number of characters in the string
- * Returns: pointer to dest
+ *
+ * Return: pointer to dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
