@@ -31,6 +31,7 @@ int is_prime_number(int n)
 {
 	if (n > 1)
 	{
-		return (check_prime(2, n));
+		return (1);
 	}
+	return (check_prime(2, n));
 }
