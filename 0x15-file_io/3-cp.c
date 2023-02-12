@@ -14,7 +14,7 @@ int _strlen(char *s)
 	{
 		len++;
 	}
-	return (len)
+	return (len);
 }
 
 /**
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 {
 	int opener_to, writer_to, p_arg = 3; /* Actual PIDargcv */
 	char *filename[];
-	char *text[];
+	char *text[1024];
 	
 	
 	if (argc != p_arg)
