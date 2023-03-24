@@ -11,7 +11,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *inserted_node;
 	dlistint_t *temp; 
-	/* Temp is a temporary head for traversing *//
+	/* Temp is a temporary head for traversing */
 
 	inserted_node = (dlistint_t *)malloc(sizeof(dlistint_t));
 	temp = *head;
