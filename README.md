@@ -13,7 +13,7 @@ As eponymously stated, it is an intoduction to low-level programming. It will gr
 1. Ubuntu 20.04 LTS
 2. GCC with -Wall -Werror -Wextra -pedantic -std=gnu89
 3. Valgrind
-4. Vi, vim and emacs as editors
+4. Vi, vim and emacs as editors ( I used vi and kept in line with Betty Style guide)
 5. Standard C libraries (e.g. standard input/output, headers, etc.)
 
 - ## Summary of Projects
