@@ -1,12 +1,14 @@
-C Language Programming Fundamentals
+# C Language Programming Fundamentals
 
 ***
 
 - ## [Background to the project](https://github.com/TayloredSuites/alx-low_level_programming)
 
-C is supposedly one of the shorter programming languages. It is contained in a handbook famously known as K & R. However, in order to utilize it properly, there is this here _megillah_ of things to know about C -- hence this project. This project is C based and aims to keep in line with the Betty linter. Files will be compiled on Ubuntu 20.04 LTS using gcc, with the options -Wall -Werror -Wextra -pedantic -std=gnu89. 
+C is supposedly one of the shorter programming languages. It is contained in a handbook famously known as K & R. However, in order to utilize it properly, there is this here _megillah_ of things to know about C -- hence this project. This project is C based and aims to keep in line with the Betty linter. Files will be compiled on `Ubuntu 20.04 LTS` using `gcc`, with the options `-Wall -Werror -Wextra -pedantic -std=gnu89`. 
 
 As eponymously stated, it is an intoduction to low-level programming. It will grow to include pointers, data structures such as singly linked lists and bit manipulation. Each addition will be consecutively added as the projects go on.
+
+![C handbook](http://2.bp.blogspot.com/-N604BJUHsng/Tp0LBpOFzvI/AAAAAAAAAhc/KY1QLlcFjPo/s1600/K%2526Rbook.jpg)
 
 - ## Relevant and Required Software
 
@@ -83,4 +85,4 @@ A lot of the projects did not go honky dory as one would expect. If you would li
 
 Contributions are welcome. Keep in line with the code style and requirements. Also follow the format fot commit messages.
 
-Thank you
+Thank you ☣️
