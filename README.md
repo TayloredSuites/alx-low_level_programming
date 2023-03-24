@@ -21,7 +21,7 @@ As eponymously stated, it is an intoduction to low-level programming. It will gr
 The following are projects contained in this repository:
 
 #### Hatching Out
-- [Hello World](https://github.com/TayloredSuites/alx-low_level_programming/tree/main/0x00-hello_world]
+- [Hello World](https://github.com/TayloredSuites/alx-low_level_programming/tree/main/0x00-hello_world)
 - [Variables: If, Else and While](https://github.com/TayloredSuites/alx-low_level_programming/tree/main/0x01-variables_if_else_while)
 - [Functions, Nested Loops](https://github.com/TayloredSuites/alx-low_level_programming/tree/main/0x02-functions_nested_loops)
 - [Debugging](https://github.com/TayloredSuites/alx-low_level_programming/tree/main/0x03-debugging)
