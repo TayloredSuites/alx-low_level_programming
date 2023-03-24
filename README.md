@@ -79,7 +79,7 @@ The following are projects contained in this repository:
 
 A lot of the projects did not go honky dory as one would expect. If you would like to see solutions that are less designed to fit the mould, you should feel free to contribute in whatever way you deem fit. I would love that, and would love to see other freestyle perspectives.
 
--## Contributing
+- ## Contributing
 
 Contributions are welcome. Keep in line with the code style and requirements. Also follow the format fot commit messages.
 
