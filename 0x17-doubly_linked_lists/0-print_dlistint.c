@@ -9,10 +9,12 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	size_t num_nodes;
+	int n;
 
 	/* h = (struct d_listint_t*)malloc(sizeof(struct dlistint_t)); */
 
 	num_nodes = 0;
+	n = h->n
 	while (h != NULL)
 	{
 		num_nodes++;
