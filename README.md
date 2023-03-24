@@ -19,7 +19,7 @@ As eponymously stated, it is an intoduction to low-level programming. It will gr
 
 Coding style looks something like this:
 
-```
+```c
 
 #include <stdio.h>
 
