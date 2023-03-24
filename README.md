@@ -6,15 +6,41 @@ C Language Programming Fundamentals
 
 C is supposedly one of the shorter programming languages. It is contained in a handbook famously known as K & R. However, in order to utilize it properly, there is this here _megillah_ of things to know about C -- hence this project. This project is C based and aims to keep in line with the Betty linter. Files will be compiled on Ubuntu 20.04 LTS using gcc, with the options -Wall -Werror -Wextra -pedantic -std=gnu89. 
 
-As eponymously stated, it is an intoduction to low-level programming. It will grow to include pointers, data structures such as singly lnked lists and bit manipulation. Each addition will be consecutively added as the projects go on.
+As eponymously stated, it is an intoduction to low-level programming. It will grow to include pointers, data structures such as singly linked lists and bit manipulation. Each addition will be consecutively added as the projects go on.
 
 - ## Relevant and Required Software
 
 1. Ubuntu 20.04 LTS
 2. GCC with -Wall -Werror -Wextra -pedantic -std=gnu89
 3. Valgrind
-4. Vi, vim and emacs as editors ( I used vi and kept in line with Betty Style guide)
+4. Vi, vim and emacs as editors 
 5. Standard C libraries (e.g. standard input/output, headers, etc.)
+6. Betty Linter
+
+Coding style looks something like this:
+
+```
+
+#include <stdio.h>
+
+/**
+ * Main - What is this?
+ * @var: Tell me more
+ *
+ * Return: To MadMaxFuryRoad
+ */
+ void main(int var)
+ {
+    int result;
+    
+    var = 2;
+    result = var * 8;
+    
+    return (result);
+}
+
+```
+
 
 - ## Summary of Projects
 
