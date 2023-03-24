@@ -2,7 +2,7 @@
 
 ***
 
-- ## [Background to the project](https://github.com/TayloredSuites/alx-low_level_programming)
+- ## [Background to the Repository](https://github.com/TayloredSuites/alx-low_level_programming)
 
 C is supposedly one of the shorter programming languages. It is contained in a handbook famously known as K & R. However, in order to utilize it properly, there is this here _megillah_ of things to know about C -- hence this project. This project is C based and aims to keep in line with the Betty linter. Files will be compiled on `Ubuntu 20.04 LTS` using `gcc`, with the options `-Wall -Werror -Wextra -pedantic -std=gnu89`. 
 
