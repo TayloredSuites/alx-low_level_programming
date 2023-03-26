@@ -16,7 +16,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	/* Length_l is the length of the linked list */
 	new_node = (listint_t *)malloc(sizeof(listint_t));
-	length_l = listint_len(*head);
+	length_l = len(*head);
 	if (idx > length_l)
 	{
 		return (NULL);
