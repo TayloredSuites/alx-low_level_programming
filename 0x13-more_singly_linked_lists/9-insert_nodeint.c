@@ -11,7 +11,7 @@
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *temp, *new_node;
-	unisgned int length_l;
+	unsigned int length_l;
 	unsigned int i;
 
 	/* Length_l is the length of the linked list */
