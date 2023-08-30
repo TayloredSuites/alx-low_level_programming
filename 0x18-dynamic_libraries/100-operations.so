@@ -1,6 +1,0 @@
-from ctypes import *
-
-shared_file = "libdynamic.so"
-liball = CDLL(shared_file)
-
-print(type(liball))
