@@ -1,1 +1,0 @@
-Understanding argv and argc one project at a time.
