@@ -12,16 +12,17 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, result;
+	int i = 2;
 
-	if (argc > 2)
+	if (argc > i)
 	{
-		result = atoi(argv[i] * argv[j])
+		result = atoi(argv[i] * argv[i + 1]);
+		printf("%d\n", result);
 	}
 	else
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
-	return result;
+	return (0);
 }
