@@ -15,7 +15,7 @@ char *_strdup(char *str)
 	int i;   /* For traversal */
 	int len;   /* length of the string */
 
-	if (str = NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
