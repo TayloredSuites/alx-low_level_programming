@@ -28,6 +28,10 @@ char *str_concat(char *s1, char *s2)
 		 len1++;    /* len of s1 */
 	 }
 	 catenated = malloc(sizeof(char) * (len1 + len2 + 1));
+	 if (catenated == NULL)
+	 {
+		 catenated = "";
+	 }
 	 for (i = 0; i < len1; i++)
 	 {
 		 catenated[i] = s1[i];
