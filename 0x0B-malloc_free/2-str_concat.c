@@ -15,12 +15,10 @@ char *str_concat(char *s1, char *s2)
 	 char *catenated;
 	 int i, j;    /*traversal value */
 	 int len1, len2;
-
 	 if (s2 == NULL)
 	 {
 		 return (NULL);
 	 }
-
 	 for (i = 0; *s2 != '\0'; i++)
 	 {
 		 len2++;    /* len of s2 */
