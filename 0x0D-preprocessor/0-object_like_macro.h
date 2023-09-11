@@ -1,3 +1,2 @@
-#ifndef 0_MAIN_C
-#define 0_MAIN_C
+#include "0-main.c"
 #define SIZE 1024
