@@ -1,4 +1,4 @@
-#include "main.h"
+#include "miain.h"
 #include <unistd.h>
 #include <stdio.h>
 
@@ -15,7 +15,7 @@ char *_strdup(char *str)
 	int i;   /* For traversal */
 	int len;   /* length of the string */
 
-	for (len = 0, *str != '\0'; str++)
+	for (len = 0; *str != '\0'; str++)
 	{
 		len++;
 	}
