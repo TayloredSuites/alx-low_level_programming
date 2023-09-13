@@ -13,10 +13,10 @@ void *malloc_checked(unsigned int b)
        unsigned int *points;
 
        points = malloc(sizeof(b));
-       if (pointer == NULL)
+       if (points == NULL)
        {
 	       exit (98);
        }
-       return (pointer);
-       free(pointer);
+       return (points);
+       free(points);
 }
