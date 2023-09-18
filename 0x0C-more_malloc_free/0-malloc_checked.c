@@ -11,7 +11,7 @@
 void *malloc_checked(unsigned int b)
 {
 	void *points;
-	
+
 	points = malloc(sizeof(b));
 	if (points == NULL)
 	{
