@@ -1,3 +1,0 @@
-let num = 23;
-
-alert(num); // prints 23
